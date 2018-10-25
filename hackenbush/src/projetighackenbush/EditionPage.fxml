@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.shape.Line?>
+
+<BorderPane id="BorderPane" prefHeight="600" prefWidth="1000" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projetighackenbush.EditionPageController" styleClass="mainFxmlClass" fx:id="borderPane">
+			<stylesheets>
+				<URL value="@editionpage.css" />
+			</stylesheets>
+    <top>
+        <HBox>
+        <MenuBar>
+            <Menu text = "Fichier">
+            <MenuItem fx:id="quitter" text = "quitter" onAction="#handleQuitter"/>
+        </Menu>
+        </MenuBar>
+            <Label minHeight="10" minWidth="400" fx:id="labelSpace"  text=""/>
+            <Button id="home" fx:id="home" onAction="#handleHome"/>
+        </HBox>
+        
+    </top>
+        <center>
+		<AnchorPane id="anchorPane" prefHeight="400.0" prefWidth="600.0" minHeight="400" minWidth="600" maxHeight="700" maxWidth="900" fx:id="anchorPane">
+			<Line  fx:id="sol" endX="600.0" endY="350.0" startX="0.0" startY="350.0"
+		stroke="0x000000ff" strokeWidth="3.0"/>
+		</AnchorPane>
+	</center>
+	<bottom>
+		<ToolBar>
+			<items>
+				<Button id="button" fx:id="clean" onAction="#handleClean">clean</Button>
+				<Button id="button2" fx:id="create" onAction="#handleCreate">create</Button>
+				<Button id="button3" fx:id="delete" onAction="#handleDelete">delete</Button>
+				<HBox>
+					<Button id="bleu" fx:id="bleu" style="buttonB" onAction="#handleColor"/>
+					<Button id="red" fx:id="red" onAction="#handleColor"/>
+					<Button id="green" fx:id="green" onAction="#handleColor"/>
+				</HBox>
+                                <HBox>
+                                    <Label minHeight="16" minWidth="69" fx:id="saveName"  text="  nom du sauvegarde"/>
+                                    <TextField fx:id="saveNameT" prefWidth="200"/>
+                                    <Button id="save" fx:id="save" onAction="#handleSave">Save</Button>
+                                </HBox>
+			</items>
+		</ToolBar>
+	</bottom>
+</BorderPane>

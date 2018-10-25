@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><?import java.lang.*?><?import java.net.*?><?import java.util.*?><?import javafx.scene.*?><?import javafx.scene.control.*?><?import javafx.scene.*?><?import javafx.scene.layout.*?><?import javafx.scene.shape.*?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1"
+	fx:controller="projetighackenbush.Ressource.Graphe" fx:id="anchorpane">
+	<Line endX="166.0" endY="291.0" onMouseClicked="#supprime" startX="285.0"
+		startY="155.0" stroke="0xff0000ff" strokeWidth="8.0" />
+	<Line endX="168.0" endY="183.0" onMouseClicked="#supprime" startX="285.0"
+		startY="155.0" stroke="0x0000ffff" strokeWidth="8.0" />
+	<Line endX="168.0" endY="183.0" onMouseClicked="#supprime" startX="166.0"
+		startY="291.0" stroke="0x008000ff" strokeWidth="8.0" />
+	<Circle centerX="168.0" centerY="183.0" fill="0x000000ff"
+		radius="8.0" />
+	<Circle centerX="285.0" centerY="155.0" fill="0x000000ff"
+		radius="8.0" />
+	<Circle centerX="166.0" centerY="291.0" fill="0x000000ff"
+		radius="8.0" />
+</AnchorPane>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane id="borderPane" prefHeight="600" prefWidth="1000" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projetighackenbush.nim.GenNimController">
+    <stylesheets>
+        <URL value="@gennim.css"/>
+    </stylesheets>
+    <top>
+        <HBox>
+        <MenuBar>
+            <Menu text="Fichier">
+                <MenuItem text="quitter" onAction="#handleQuitter" />
+            </Menu>
+        </MenuBar>
+        </HBox>
+        
+    </top>
+    <center>
+		<AnchorPane id="pane" prefHeight="400.0" prefWidth="600.0" minHeight="400" minWidth="600" maxHeight="700" maxWidth="900" fx:id="pane">
+			<Label minHeight="16" minWidth="69" fx:id="notifJoueur"  text=""/>
+		</AnchorPane>
+	</center>
+	<bottom>
+		<ToolBar>
+			<items>
+                            <Label minHeight="16" minWidth="69" fx:id="ligneLabel"  text="nombre de tige"/>
+                            <TextField fx:id="numberOfHeaps" prefWidth="50.0"/>
+                            <Label layoutX="126" layoutY="120" minHeight="16" minWidth="69" fx:id="colonneLabel"  text="taille max du tige"/>
+                            <TextField fx:id="maxSize" prefWidth="50.0"/>
+                            <CheckBox id="isMisere" fx:id="isMisere">
+                                misère Nim
+                            </CheckBox>
+                            <CheckBox id="isInteligentAI" fx:id="isInteligentAI">
+                                Inteligent AI
+                            </CheckBox>
+                            <Button id="generate" fx:id="generate" onAction="#handleGenerate"/>
+                            <Button id="rejouer" fx:id="rejouer" onAction="#handleRejouer"/>
+                            
+                            <fx:define>
+                                <ToggleGroup fx:id="modeDeJeu"/>
+                            </fx:define>
+                            <RadioButton id="vsAI" fx:id="vsAI" text="vs AI" toggleGroup="$modeDeJeu" />
+                            <RadioButton id="vsPlayer" fx:id="vsPlayer" text="vs PLAYER" toggleGroup="$modeDeJeu"/>
+                            <RadioButton id="aiVsAi" fx:id="aiVsAi" text="AI vs AI" toggleGroup="$modeDeJeu"/>
+                          
+                        </items>
+		</ToolBar>
+	</bottom>
+</BorderPane>

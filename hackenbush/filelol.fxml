@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<anchorPane>
+<Line endX="117.0" endY="217.0" startX="141.0" startY="63.0" stroke="0x000000ff" strokeWidth="8.0"/>
+<Line endX="141.0" endY="63.0" startX="181.0" startY="124.0" stroke="0x000000ff" strokeWidth="8.0"/>
+<Line endX="141.0" endY="63.0" startX="117.0" startY="217.0" stroke="0x000000ff" strokeWidth="8.0"/>
+<Line endX="141.0" endY="63.0" startX="138.0" startY="249.0" stroke="0x000000ff" strokeWidth="8.0"/>
+<Line endX="141.0" endY="63.0" startX="138.0" startY="249.0" stroke="0x000000ff" strokeWidth="8.0"/>
+<Line endX="141.0" endY="63.0" startX="117.0" startY="217.0" stroke="0x000000ff" strokeWidth="8.0"/>
+<Line endX="141.0" endY="63.0" startX="117.0" startY="217.0" stroke="0x000000ff" strokeWidth="8.0"/><Circle centerX="138.0" centerY="64.0" fill="0x000000ff" radius="8.0"/><Line endX="115.0" endY="191.0" startX="138.0" startY="64.0" stroke="0x000000ff" strokeWidth="8.0"/><Circle centerX="141.0" centerY="63.0" fill="0x000000ff" radius="8.0"/><Circle centerX="181.0" centerY="124.0" fill="0x000000ff" radius="8.0"/><Circle centerX="124.0" centerY="158.0" fill="0x000000ff" radius="8.0"/><Circle centerX="117.0" centerY="217.0" fill="0x000000ff" radius="8.0"/><Circle centerX="138.0" centerY="249.0" fill="0x000000ff" radius="8.0"/></anchorPane>

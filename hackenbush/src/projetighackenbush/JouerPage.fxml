@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<BorderPane id="BorderPane" prefHeight="600" prefWidth="1000" fx:id="borderPane"
+	minHeight="500" minWidth="700" xmlns:fx="http://javafx.com/fxml/1"
+	fx:controller="projetighackenbush.JouerPageController" styleClass="mainFxmlClass">
+	<stylesheets>
+		<URL value="@editionpage.css" />
+	</stylesheets>
+	<top>
+        <HBox>
+        <MenuBar>
+            <Menu text="Fichier">
+                <MenuItem text="ouvrir" onAction="#handleOuvrir" />
+                <MenuItem text="quitter" onAction="#handleQuitter" />
+            </Menu>
+        </MenuBar>
+            <Label minHeight="10" minWidth="400" fx:id="labelSpace"  text=""/>
+            <Button id="home" fx:id="home" onAction="#handleHome"/>
+        </HBox>
+        
+    </top>
+	<center>
+		<AnchorPane id="AnchorPane" fx:id="anchorpane" prefHeight="400.0"
+			prefWidth="600.0">
+			<stylesheets>
+				<URL value="@jouerpage.css" />
+			</stylesheets>
+
+		</AnchorPane>
+	</center>
+</BorderPane>
